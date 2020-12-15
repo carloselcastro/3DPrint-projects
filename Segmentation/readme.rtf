@@ -1,0 +1,21 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf600
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b\fs24 \cf0 Readme - Ap\'f3s reuni\'e3o de 08/07/2020
+\b0 \
+\
+% Para ler e plotar segmenta\'e7\'e3o com eixo z apontando para cima:\
+\
+[seg,V,F] = plot_mesh_segmentation('../MeshsegBenchmark-1.0/data/off/285.off','../MeshsegBenchmark-1.0/data/seg/Benchmark/285/285_0.seg'); \
+\
+view([1 0 0])\
+\
+\
+\
+% Para rodar segmentos individualmente (tamb\'e9m plota resultado)\
+\
+rotated_segs = rotate_segments(V,F,pi/18,pi/36,seg);}
